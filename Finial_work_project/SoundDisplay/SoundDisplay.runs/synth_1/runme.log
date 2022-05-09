@@ -1,0 +1,1949 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31276 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 384.621 ; gain = 125.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:39]
+INFO: [Synth 8-6157] synthesizing module 'main_menu' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Main_menu.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Main_menu.v:45]
+INFO: [Synth 8-6157] synthesizing module 'find_row_col' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/find_row_col.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'find_row_col' (3#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/find_row_col.v:24]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (5#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main_menu' (6#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Main_menu.v:22]
+INFO: [Synth 8-6157] synthesizing module 'student_A' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/student_A.v:21]
+INFO: [Synth 8-6157] synthesizing module 'reset' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/reset.v:23]
+	Parameter SAMPLE_TIME bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset' (7#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/reset.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk6p25m' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_6p25m.v:23]
+	Parameter factor bound to: 16'b0000000000010000 
+INFO: [Synth 8-6155] done synthesizing module 'clk6p25m' (8#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_6p25m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (9#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_voice' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_voice.v:22]
+	Parameter factor bound to: 16'b0000100111000011 
+INFO: [Synth 8-6155] done synthesizing module 'clk_voice' (10#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_voice.v:22]
+INFO: [Synth 8-6157] synthesizing module 'peak_volume_calcutate' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/peak_vol.v:22]
+	Parameter capture_intever_time bound to: 24'b000000000000111110100000 
+	Parameter update_intever_time bound to: 24'b000000000010011100001111 
+	Parameter register_num bound to: 10'b0000000100 
+	Parameter volume_default bound to: 12'b100000000000 
+	Parameter volume_grade1 bound to: 2176 - type: integer 
+	Parameter volume_grade2 bound to: 2304 - type: integer 
+	Parameter volume_grade3 bound to: 2432 - type: integer 
+	Parameter volume_grade4 bound to: 2560 - type: integer 
+	Parameter volume_grade5 bound to: 2688 - type: integer 
+	Parameter volume_grade6 bound to: 2816 - type: integer 
+	Parameter volume_grade7 bound to: 2944 - type: integer 
+	Parameter volume_grade8 bound to: 3072 - type: integer 
+	Parameter volume_grade9 bound to: 3200 - type: integer 
+	Parameter volume_grade10 bound to: 3328 - type: integer 
+	Parameter volume_grade11 bound to: 3456 - type: integer 
+	Parameter volume_grade12 bound to: 3584 - type: integer 
+	Parameter volume_grade13 bound to: 3712 - type: integer 
+	Parameter volume_grade14 bound to: 3840 - type: integer 
+	Parameter volume_grade15 bound to: 3968 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'peak_volume_calcutate' (11#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/peak_vol.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'student_A' (12#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/student_A.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Student_B' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blink_title' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/blink_title.v:23]
+WARNING: [Synth 8-689] width (31) of port connection 'new_clock' does not match port width (1) of module 'clock_divider' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/blink_title.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'blink_title' (13#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/blink_title.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:70]
+INFO: [Synth 8-6157] synthesizing module 'random_clor' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_color.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'random_clor' (14#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_color.v:22]
+INFO: [Synth 8-6157] synthesizing module 'change_color' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:23]
+INFO: [Synth 8-6157] synthesizing module 'D_FF' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/D_FF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'D_FF' (15#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/D_FF.v:23]
+WARNING: [Synth 8-350] instance 'right2' of module 'D_FF' requires 4 connections, but only 3 given [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:32]
+WARNING: [Synth 8-350] instance 'left2' of module 'D_FF' requires 4 connections, but only 3 given [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:34]
+WARNING: [Synth 8-6014] Unused sequential element Q1_bar_reg was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:50]
+WARNING: [Synth 8-6014] Unused sequential element Q2_bar_reg was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'change_color' (16#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_color.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'count_r' does not match port width (4) of module 'change_color' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:225]
+WARNING: [Synth 8-689] width (6) of port connection 'count_g' does not match port width (4) of module 'change_color' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:225]
+WARNING: [Synth 8-689] width (6) of port connection 'count_b' does not match port width (4) of module 'change_color' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:225]
+WARNING: [Synth 8-689] width (1) of port connection 'check_state' does not match port width (16) of module 'change_color' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:225]
+WARNING: [Synth 8-6090] variable 'count_press' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:240]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:281]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:292]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:303]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:314]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:325]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:336]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:347]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:358]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:369]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:380]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:391]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:402]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:413]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:424]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:435]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:446]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:457]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:472]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:483]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:494]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:505]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:516]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:527]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:538]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:549]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:560]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:571]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:582]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:593]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:604]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:615]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:626]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:637]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:648]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:468]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:675]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:676]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:679]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:681]
+WARNING: [Synth 8-6014] Unused sequential element current_reg was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:97]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[0] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[1] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[2] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[3] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[4] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[5] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[6] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[7] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[8] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[9] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[10] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[11] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[12] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[13] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[14] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[15] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[16] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[17] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[18] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[19] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[20] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[21] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[22] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[23] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[24] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[25] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[26] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[27] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[28] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[29] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[30] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[31] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[32] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[33] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[34] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[35] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[36] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[37] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[38] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[39] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[40] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[41] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[42] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[43] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[44] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[45] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[46] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[47] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[48] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[49] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[50] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[51] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[52] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[53] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[54] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[55] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[56] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[57] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[58] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[59] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[60] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[61] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[62] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[63] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[64] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[65] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[66] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[67] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[68] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[69] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[70] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[71] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[72] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[73] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[74] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[75] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[76] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[77] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[78] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[79] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[80] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[81] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[82] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[83] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[84] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[85] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[86] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[87] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[88] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[89] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[90] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[91] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[92] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[93] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[94] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wave_reg[95] was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:135]
+WARNING: [Synth 8-3848] Net change_col[6] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[7] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[8] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[9] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[10] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[11] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[12] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[13] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[14] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+WARNING: [Synth 8-3848] Net change_col[15] in module/entity Student_B does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'Student_B' (17#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'teamwork' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:21]
+WARNING: [Synth 8-689] width (21) of port connection 'row' does not match port width (13) of module 'find_row_col' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:97]
+WARNING: [Synth 8-689] width (21) of port connection 'col' does not match port width (13) of module 'find_row_col' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:97]
+INFO: [Synth 8-6157] synthesizing module 'change_image' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:23]
+WARNING: [Synth 8-350] instance 'right1' of module 'D_FF' requires 4 connections, but only 3 given [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:31]
+WARNING: [Synth 8-350] instance 'right2' of module 'D_FF' requires 4 connections, but only 3 given [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:32]
+WARNING: [Synth 8-350] instance 'left2' of module 'D_FF' requires 4 connections, but only 3 given [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:34]
+WARNING: [Synth 8-6014] Unused sequential element Q1_bar_reg was removed.  [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:48]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net sw in module/entity change_image does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'change_image' (18#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'count' does not match port width (4) of module 'change_image' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:99]
+WARNING: [Synth 8-6104] Input port 'sw' has an internal driver [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:99]
+INFO: [Synth 8-6157] synthesizing module 'read_speed' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:22]
+INFO: [Synth 8-6157] synthesizing module 'increase_speed_clk' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/increase_speed_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'increase_speed_clk' (19#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/increase_speed_clk.v:23]
+WARNING: [Synth 8-689] width (51) of port connection 'm' does not match port width (32) of module 'increase_speed_clk' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:39]
+WARNING: [Synth 8-689] width (51) of port connection 'new_clock' does not match port width (1) of module 'increase_speed_clk' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'read_speed' (20#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:22]
+WARNING: [Synth 8-689] width (5) of port connection 'count_speed' does not match port width (51) of module 'read_speed' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:102]
+WARNING: [Synth 8-689] width (5) of port connection 'count_speed' does not match port width (51) of module 'read_speed' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:103]
+WARNING: [Synth 8-689] width (5) of port connection 'count_speed' does not match port width (51) of module 'read_speed' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:104]
+WARNING: [Synth 8-689] width (5) of port connection 'count_speed' does not match port width (51) of module 'read_speed' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:105]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:141]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:173]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:361]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:526]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:695]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'teamwork' (21#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/teamwork.v:21]
+INFO: [Synth 8-6157] synthesizing module 'schoolwork' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:74]
+WARNING: [Synth 8-689] width (21) of port connection 'row' does not match port width (13) of module 'find_row_col' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:84]
+WARNING: [Synth 8-689] width (21) of port connection 'col' does not match port width (13) of module 'find_row_col' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:84]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:115]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:129]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:142]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:153]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:164]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:177]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:231]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:236]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:240]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:246]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:251]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:259]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:265]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:270]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:277]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:281]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:289]
+WARNING: [Synth 8-6090] variable 'pix_data_in' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:293]
+INFO: [Synth 8-6155] done synthesizing module 'schoolwork' (22#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/schoolwork.v:23]
+WARNING: [Synth 8-3848] Net J_MIC3_Pin1_wire[5] in module/entity Top_Student does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:110]
+WARNING: [Synth 8-3848] Net J_MIC3_Pin4_wire[5] in module/entity Top_Student does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:111]
+WARNING: [Synth 8-3848] Net JC_wire[5] in module/entity Top_Student does not have driver. [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (23#1) [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:39]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port JC[2]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[14]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[13]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[12]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[11]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[10]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[9]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[8]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[7]
+WARNING: [Synth 8-3331] design schoolwork has unconnected port sw[6]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[15]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[14]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[13]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[12]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[11]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[10]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[9]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[8]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[7]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[6]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[5]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[4]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[3]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[1]
+WARNING: [Synth 8-3331] design increase_speed_clk has unconnected port sw[0]
+WARNING: [Synth 8-3331] design read_speed has unconnected port clk6p25
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[15]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[14]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[13]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[12]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[11]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[10]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[9]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[8]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[7]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[6]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[5]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[4]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[3]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[2]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[1]
+WARNING: [Synth 8-3331] design change_image has unconnected port sw[0]
+WARNING: [Synth 8-3331] design teamwork has unconnected port JC[2]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[15]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[14]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[13]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[12]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[11]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[10]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[9]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[8]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[5]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[4]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[3]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[2]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[1]
+WARNING: [Synth 8-3331] design change_color has unconnected port sw[0]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[15]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[13]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[12]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[11]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[10]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[9]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[8]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[7]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[6]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[5]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[4]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[3]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[2]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[1]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Student_B has unconnected port JC[2]
+WARNING: [Synth 8-3331] design student_A has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[15]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[5]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[4]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[3]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[1]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 873.785 ; gain = 614.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 873.785 ; gain = 614.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 873.785 ; gain = 614.582
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2603.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/change_image.v:55]
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_time" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_time" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_peak" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pix_data_in" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pix_data_in" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pix_data_in" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Student_B__GB0   |           1|     25081|
+|2     |Student_B__GB1   |           1|     26161|
+|3     |teamwork__GB0    |           1|     50621|
+|4     |teamwork__GB1    |           1|      8833|
+|5     |teamwork__GB2    |           1|     11034|
+|6     |Top_Student__GC0 |           1|     21147|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 5     
+	   2 Input     16 Bit       Adders := 10    
+	   3 Input     14 Bit       Adders := 96    
+	   4 Input     14 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 96    
+	   2 Input      6 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 4     
+	  12 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               51 Bit    Registers := 8     
+	               40 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	               22 Bit    Registers := 1     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 16    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 24    
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 98    
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 58    
++---Muxes : 
+	   2 Input     51 Bit        Muxes := 4     
+	   2 Input     40 Bit        Muxes := 15    
+	  32 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 22    
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input     22 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 5     
+	   2 Input     17 Bit        Muxes := 5     
+	  16 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 272   
+	   7 Input     16 Bit        Muxes := 2     
+	  19 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 4     
+	   9 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 3     
+	  12 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 5     
+	   4 Input     15 Bit        Muxes := 1     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 37    
+	   4 Input      8 Bit        Muxes := 18    
+	   5 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 19    
+	  32 Input      5 Bit        Muxes := 10    
+	  17 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 28    
+	   4 Input      4 Bit        Muxes := 5     
+	  17 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 152   
+	  18 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 2     
+Module clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module D_FF__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module D_FF__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module D_FF__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module change_color 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+Module random_clor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blink_title 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Student_B 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 7     
+	   3 Input     14 Bit       Adders := 96    
+	   2 Input      7 Bit       Adders := 96    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 96    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 32    
+	   7 Input     16 Bit        Muxes := 1     
+	  19 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 21    
+	   4 Input      8 Bit        Muxes := 17    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	  18 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module clock_divider__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FF__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module D_FF__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module D_FF__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module change_image 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module increase_speed_clk__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module read_speed__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               51 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module increase_speed_clk__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module read_speed__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               51 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module increase_speed_clk__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module read_speed__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               51 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module increase_speed_clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module read_speed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               51 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module reset__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Audio_Capture__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module peak_volume_calcutate__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Oled_Display__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module teamwork 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 137   
+	   9 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 3     
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module clock_divider__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module main_menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 21    
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module clk6p25m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module clk_voice 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module peak_volume_calcutate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module student_A 
+Detailed RTL Component Info : 
++---Adders : 
+	  12 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 62    
+	   3 Input     16 Bit        Muxes := 8     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+Module clock_divider__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module Oled_Display__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Audio_Capture__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module schoolwork 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     22 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 17    
+	  12 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'visual_peak_reg[0][4:0]' into 'visual_peak_reg[0][4:0]' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/Student_B.v:179]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[0][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[1][0]' (FDE) to 'visual_peak_reg[0][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[0][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[0][0]' (FDE) to 'visual_peak_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[2][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[2][0]' (FDE) to 'visual_peak_reg[3][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[3][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[3][0]' (FDE) to 'visual_peak_reg[4][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[4][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[4][0]' (FDE) to 'visual_peak_reg[5][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[5][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[5][0]' (FDE) to 'visual_peak_reg[6][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[6][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[6][0]' (FDE) to 'visual_peak_reg[7][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[7][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[7][0]' (FDE) to 'visual_peak_reg[8][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[8][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[8][0]' (FDE) to 'visual_peak_reg[9][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[9][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[9][0]' (FDE) to 'visual_peak_reg[10][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[10][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[10][0]' (FDE) to 'visual_peak_reg[11][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[11][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[11][0]' (FDE) to 'visual_peak_reg[12][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[12][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[12][0]' (FDE) to 'visual_peak_reg[13][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[13][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[13][0]' (FDE) to 'visual_peak_reg[14][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[14][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[14][0]' (FDE) to 'visual_peak_reg[15][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[15][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[15][0]' (FDE) to 'visual_peak_reg[16][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[16][0] )
+INFO: [Synth 8-3886] merging instance 'visual_peak_reg[16][0]' (FDE) to 'visual_peak_reg[17][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[17][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[21][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[23][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[24][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[25][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[26][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[27][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[28][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[29][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[30][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[31][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[32][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[33][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[34][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[35][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[36][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[37][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[38][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[39][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[40][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[41][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[42][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[43][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[44][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[45][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[46][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[47][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[48][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[49][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[50][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[51][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[52][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[53][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[54][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[55][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[56][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[57][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[58][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[59][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[60][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[61][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[62][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[63][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[64][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[65][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[66][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[67][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[68][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[69][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[70][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[71][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[72][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[73][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[74][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[75][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[76][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[77][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[78][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[79][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[80][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[81][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[82][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[83][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[84][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[85][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[86][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[87][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[88][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[89][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[90][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[91][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[92][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[93][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\visual_peak_reg[94][0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "change_col" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_1/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[15]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[13]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[12]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[11]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[10]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[9]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[8]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[7]
+WARNING: [Synth 8-3331] design blink_title has unconnected port sw[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][0]' (FDE) to 'change_col_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][0]' (FDE) to 'change_col_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][0]' (FDE) to 'change_col_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][0]' (FDE) to 'change_col_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][0]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][1]' (FDE) to 'change_col_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][1]' (FDE) to 'change_col_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][1]' (FDE) to 'change_col_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][1]' (FDE) to 'change_col_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][1]' (FDRE) to 'change_col_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][1]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][2]' (FDE) to 'change_col_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][2]' (FDE) to 'change_col_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][2]' (FDE) to 'change_col_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][2]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][2]' (FDRE) to 'change_col_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][2]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][3]' (FDE) to 'change_col_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][3]' (FDE) to 'change_col_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][3]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][3]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][3]' (FDRE) to 'change_col_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][3]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][4]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][4]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][4]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][4]' (FDRE) to 'change_col_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][4]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][5]' (FDE) to 'change_col_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][5]' (FDE) to 'change_col_reg[4][8]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][5]' (FDE) to 'change_col_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][5]' (FDE) to 'change_col_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][5]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][6]' (FDE) to 'change_col_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][6]' (FDE) to 'change_col_reg[4][8]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][6]' (FDE) to 'change_col_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][6]' (FDRE) to 'change_col_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][6]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][7]' (FDE) to 'change_col_reg[5][8]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][7]' (FDE) to 'change_col_reg[4][8]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][7]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][7]' (FDRE) to 'change_col_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][7]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][8]' (FDE) to 'change_col_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][8]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][8]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][8]' (FDRE) to 'change_col_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][8]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][9]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][9]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][9]' (FDE) to 'change_col_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][9]' (FDRE) to 'change_col_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][9]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][10]' (FDE) to 'change_col_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][10]' (FDE) to 'change_col_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][10]' (FDE) to 'change_col_reg[2][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\change_col_reg[2][10] )
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][10]' (FDRE) to 'change_col_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][10]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][11]' (FDE) to 'change_col_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][11]' (FDE) to 'change_col_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][11]' (FDE) to 'change_col_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][11]' (FDE) to 'change_col_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][11]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][12]' (FDE) to 'change_col_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][12]' (FDE) to 'change_col_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][12]' (FDE) to 'change_col_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][12]' (FDE) to 'change_col_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][12]' (FDRE) to 'change_col_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][12]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][13]' (FDE) to 'change_col_reg[5][14]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][13]' (FDE) to 'change_col_reg[5][14]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][13]' (FDE) to 'change_col_reg[5][14]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][13]' (FDRE) to 'change_col_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][13]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[5][14]' (FDE) to 'change_col_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][14]' (FDE) to 'change_col_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[1][14]' (FDRE) to 'change_col_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[0][14]' (FDRE) to 'change_col_reg[0][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\change_col_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\change_col_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'state_out_reg[0]' (FDRE) to 'state_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'state_out_reg[2]' (FDRE) to 'state_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_out_reg[3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'change_col_reg[2][6]' (FDE) to 'change_col_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[3][7]' (FDE) to 'change_col_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'change_col_reg[4][8]' (FDE) to 'change_col_reg[5][9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'u2/count_reg[50:0]' into 'u1/count_reg[50:0]' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:31]
+INFO: [Synth 8-4471] merging register 'u3/count_reg[50:0]' into 'u1/count_reg[50:0]' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:31]
+INFO: [Synth 8-4471] merging register 'u4/count_reg[50:0]' into 'u1/count_reg[50:0]' [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/read_speed.v:31]
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "u1/count_speed" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "source_peak_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instance_reset/reset_sig_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instance_reset/reset_sig_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[6]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[5]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[4]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[3]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[2]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[1]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (capture_peak_data_reg[0]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[15]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[14]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[13]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[12]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[11]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[10]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[9]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[8]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[7]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[6]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[5]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[4]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[3]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[2]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[1]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (led_reg[0]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (mic_in_grade_reg[4]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (mic_in_grade_reg[3]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (mic_in_grade_reg[2]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (mic_in_grade_reg[1]) is unused and will be removed from module peak_volume_calcutate__1.
+WARNING: [Synth 8-3332] Sequential element (mic_in_grade_reg[0]) is unused and will be removed from module peak_volume_calcutate__1.
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "source_peak_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instance_reset/reset_sig_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instance_reset/reset_sig_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sig/clktmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_voice/clk20k_tmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[6]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[5]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[4]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[3]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[2]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[1]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[0]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[15]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[14]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[13]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[12]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[11]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[10]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[9]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[8]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[7]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[6]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[5]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[4]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[3]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[2]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[1]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/led_reg[0]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/peak_data_reg[2]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/peak_data_reg[1]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/peak_data_reg[0]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/mic_in_grade_reg[4]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/mic_in_grade_reg[3]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/mic_in_grade_reg[2]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/mic_in_grade_reg[1]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/mic_in_grade_reg[0]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (led_reg[15]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (state_out_reg[3]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (current_peak_reg[17]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (current_peak_reg[15]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (led_reg[15]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (an_reg[3]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (state_out_reg[3]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (pix_data_in_reg[4]) is unused and will be removed from module schoolwork.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[9]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[8]) is unused and will be removed from module student_A.
+WARNING: [Synth 8-3332] Sequential element (peak_volume_calcutate_inst/capture_peak_data_reg[7]) is unused and will be removed from module student_A.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Student_B__GB0   |           1|      8985|
+|2     |Student_B__GB1   |           1|      8024|
+|3     |teamwork__GB0    |           1|     19011|
+|4     |teamwork__GB1    |           1|       969|
+|5     |teamwork__GB2    |           1|      1385|
+|6     |Top_Student__GC0 |           1|      6941|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:53 ; elapsed = 00:01:57 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Student_B__GB0   |           1|      8985|
+|2     |Student_B__GB1   |           1|      8023|
+|3     |teamwork__GB0    |           1|     19011|
+|4     |teamwork__GB1    |           1|       969|
+|5     |teamwork__GB2    |           1|      1385|
+|6     |Top_Student__GC0 |           1|      6858|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sclk_reg ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sclk_reg ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:45]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[11] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[11] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[10] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[10] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[9] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[9] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[8] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[8] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[7] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[7] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[6] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[6] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[5] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[5] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[4] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[4] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[3] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[3] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[2] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[2] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[1] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[1] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+INFO: [Synth 8-4765] Removing register instance (\unit_4/audio/sample_reg[0] ) from module (Top_Student__GC0) as it is equivalent to (\unit_4/audio_copy/sample_reg[0] ) and driving same net [D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.srcs/sources_1/new/c.v:53]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:57 ; elapsed = 00:02:08 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Student_B__GB0   |           1|      3763|
+|2     |Student_B__GB1   |           1|      3240|
+|3     |teamwork__GB0    |           1|      7164|
+|4     |teamwork__GB1    |           1|       411|
+|5     |teamwork__GB2    |           1|       476|
+|6     |Top_Student__GC0 |           1|      3179|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:59 ; elapsed = 00:02:10 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:59 ; elapsed = 00:02:11 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:00 ; elapsed = 00:02:11 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:00 ; elapsed = 00:02:11 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Student | unit_3/peak_volume_calcutate_inst/sample_buffer_array_reg[3][11] | 4      | 12    | YES          | NO                 | YES               | 12     | 0       | 
+|Top_Student | unit_1/peak_volume_calcutate_inst/sample_buffer_array_reg[3][11] | 4      | 12    | YES          | NO                 | YES               | 12     | 0       | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |    11|
+|2     |CARRY4 |   817|
+|3     |LUT1   |   382|
+|4     |LUT2   |  1335|
+|5     |LUT3   |  1561|
+|6     |LUT4   |  1672|
+|7     |LUT5   |  2142|
+|8     |LUT6   |  8081|
+|9     |MUXF7  |    10|
+|10    |MUXF8  |     1|
+|11    |SRL16E |    24|
+|12    |FDE_1  |   128|
+|13    |FDRE   |  2203|
+|14    |FDRE_1 |    31|
+|15    |FDSE   |    15|
+|16    |FDSE_1 |     1|
+|17    |LD     |     3|
+|18    |IBUF   |    23|
+|19    |OBUF   |    38|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-------------------------+------+
+|      |Instance                       |Module                   |Cells |
++------+-------------------------------+-------------------------+------+
+|1     |top                            |                         | 18478|
+|2     |  unit_0                       |main_menu                |  1069|
+|3     |    clock_10                   |clock_divider_33         |    55|
+|4     |    clock_6p25m                |clock_divider_34         |    52|
+|5     |    enter_0                    |single_pulse             |     7|
+|6     |      mod1                     |dff_43                   |     2|
+|7     |      mod2                     |dff_44                   |     1|
+|8     |    go_down                    |single_pulse_35          |     8|
+|9     |      mod1                     |dff_41                   |     2|
+|10    |      mod2                     |dff_42                   |     1|
+|11    |    go_up                      |single_pulse_36          |     6|
+|12    |      mod1                     |dff_39                   |     2|
+|13    |      mod2                     |dff_40                   |     1|
+|14    |    oled                       |Oled_Display_37          |   705|
+|15    |    row_col                    |find_row_col_38          |   216|
+|16    |  unit_1                       |student_A                |  1229|
+|17    |    Audio_Capture              |Audio_Capture_28         |    67|
+|18    |    clk_sig                    |clk6p25m                 |    28|
+|19    |    clk_voice                  |clk_voice                |    29|
+|20    |    clock_10                   |clock_divider_29         |    70|
+|21    |    instance_OLED              |Oled_Display_30          |   433|
+|22    |    instance_reset             |reset_31                 |    69|
+|23    |    peak_volume_calcutate_inst |peak_volume_calcutate_32 |   210|
+|24    |  unit_2                       |Student_B                |  7099|
+|25    |    audio0                     |Audio_Capture_16         |    86|
+|26    |    blink                      |blink_title              |    59|
+|27    |      clock_1                  |clock_divider_27         |    54|
+|28    |    clock_10                   |clock_divider_17         |    55|
+|29    |    clock_20k                  |clock_divider_18         |    52|
+|30    |    clock_3                    |clock_divider_19         |    54|
+|31    |    clock_30                   |clock_divider_20         |    63|
+|32    |    clock_381                  |clock_divider_21         |    53|
+|33    |    clock_6p25m                |clock_divider_22         |    51|
+|34    |    col                        |random_clor              |    20|
+|35    |    color_R                    |change_color             |    44|
+|36    |      left1                    |D_FF_24                  |     3|
+|37    |      left2                    |D_FF_25                  |     1|
+|38    |      right1                   |dff                      |    13|
+|39    |      right2                   |D_FF_26                  |     8|
+|40    |    oled                       |Oled_Display_23          |  5598|
+|41    |  unit_3                       |teamwork                 |  8122|
+|42    |    R                          |change_image             |    56|
+|43    |      left1                    |D_FF                     |     3|
+|44    |      left2                    |D_FF_13                  |     1|
+|45    |      right1                   |D_FF_14                  |     6|
+|46    |      right2                   |D_FF_15                  |     3|
+|47    |    audio0                     |Audio_Capture_2          |    67|
+|48    |    clock_10                   |clock_divider_3          |    55|
+|49    |    clock_20k                  |clock_divider_4          |    52|
+|50    |    clock_6p25m                |clock_divider_5          |    51|
+|51    |    instance_reset             |reset                    |    69|
+|52    |    oled                       |Oled_Display_6           |  6298|
+|53    |    peak_volume_calcutate_inst |peak_volume_calcutate    |   249|
+|54    |    u1                         |read_speed               |   249|
+|55    |      cloc                     |increase_speed_clk_12    |   231|
+|56    |    u2                         |read_speed_7             |   163|
+|57    |      cloc                     |increase_speed_clk_11    |   149|
+|58    |    u3                         |read_speed_8             |   168|
+|59    |      cloc                     |increase_speed_clk_10    |   149|
+|60    |    u4                         |read_speed_9             |   149|
+|61    |      cloc                     |increase_speed_clk       |   127|
+|62    |  unit_4                       |schoolwork               |   824|
+|63    |    audio                      |Audio_Capture            |    12|
+|64    |    audio_copy                 |Audio_Capture_0          |    64|
+|65    |    clock_20k                  |clock_divider            |    55|
+|66    |    clock_6p25m                |clock_divider_1          |    52|
+|67    |    oled                       |Oled_Display             |   401|
+|68    |    row_col                    |find_row_col             |    91|
++------+-------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 202 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 2609.914 ; gain = 614.582
+Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:13 . Memory (MB): peak = 2609.914 ; gain = 2350.711
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1014 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 163 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 128 instances
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+488 Infos, 337 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:16 . Memory (MB): peak = 2609.914 ; gain = 2363.770
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/NUS_year1_sem2/EE2026/Finial_project_implement/try/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2609.914 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  6 11:52:01 2022...
