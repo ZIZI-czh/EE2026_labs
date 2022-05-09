@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assign_1/Assign_1.srcs/sources_1/new/assign_simple_boolean.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module assign_1_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assign_1/Assign_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

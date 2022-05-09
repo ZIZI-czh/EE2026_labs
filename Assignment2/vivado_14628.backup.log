@@ -1,0 +1,1124 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Feb  8 22:56:27 2022
+# Process ID: 14628
+# Current directory: E:/EE2026_Lab/Assignment2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12500 E:\EE2026_Lab\Assignment2\Assignment2.xpr
+# Log file: E:/EE2026_Lab/Assignment2/vivado.log
+# Journal file: E:/EE2026_Lab/Assignment2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/EE2026_Lab/Assignment2/Assignment2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 960.562 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 987.023 ; gain = 1.547
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 996.605 ; gain = 0.746
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1001.086 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Feb  8 23:06:58 2022] Launched synth_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1/runme.log
+[Tue Feb  8 23:06:58 2022] Launched impl_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1836.191 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1836.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1925.488 ; gain = 910.879
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Tue Feb  8 23:14:11 2022] Launched impl_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Feb  8 23:16:14 2022] Launched synth_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1/runme.log
+[Tue Feb  8 23:16:14 2022] Launched impl_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Feb  8 23:22:22 2022] Launched synth_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1/runme.log
+[Tue Feb  8 23:22:22 2022] Launched impl_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C8FA
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2592.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2592.953 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2592.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.953 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2592.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2596.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2596.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2599.117 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation_bits' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_bits_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_bits_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/EE2026_Lab/Assignment2/Assignment2.srcs/sim_1/new/simulation_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_bits
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 26bd2ac2abe4466d916cdc7cb460152d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_bits_behav xil_defaultlib.simulation_bits xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.two_bits_adder
+Compiling module xil_defaultlib.five_bits_adder
+Compiling module xil_defaultlib.seven_bits_adder
+Compiling module xil_defaultlib.simulation_bits
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_bits_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/EE2026_Lab/Assignment2/Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_bits_behav -key {Behavioral:sim_1:Functional:simulation_bits} -tclbatch {simulation_bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source simulation_bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2600.062 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Feb  8 23:44:58 2022] Launched synth_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/synth_1/runme.log
+[Tue Feb  8 23:44:58 2022] Launched impl_1...
+Run output will be captured here: E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/EE2026_Lab/Assignment2/Assignment2.runs/impl_1/seven_bits_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: seven_bits_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2715.543 ; gain = 112.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seven_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'two_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'one_bit_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'one_bit_adder' (1#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_bits_adder' (2#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'five_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'five_bits_adder' (3#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seven_bits_adder' (4#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[0] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[7] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2754.391 ; gain = 151.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2754.391 ; gain = 151.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2754.391 ; gain = 151.512
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port button can not be placed on PACKAGE_PIN T18 because the PACKAGE_PIN is occupied by port button [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc:113]
+Finished Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2868.445 ; gain = 265.566
+13 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: seven_bits_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seven_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'two_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'one_bit_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'one_bit_adder' (1#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_bits_adder' (2#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'five_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'five_bits_adder' (3#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seven_bits_adder' (4#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[0] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[7] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port button can not be placed on PACKAGE_PIN T18 because the PACKAGE_PIN is occupied by port button [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc:113]
+Finished Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2868.445 ; gain = 0.000
+13 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: seven_bits_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seven_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'two_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'one_bit_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'one_bit_adder' (1#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_bits_adder' (2#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/two_bits_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'five_bits_adder' [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'five_bits_adder' (3#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/five_bits_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seven_bits_adder' (4#1) [E:/EE2026_Lab/Assignment2/Assignment2.srcs/sources_1/new/seven_bits_adder.v:23]
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port anode[0] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[7] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design seven_bits_adder has port seg[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2868.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port button can not be placed on PACKAGE_PIN T18 because the PACKAGE_PIN is occupied by port button [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc:113]
+Finished Parsing XDC File [E:/EE2026_Lab/Assignment2/Assignment2.srcs/constrs_1/new/contraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2868.445 ; gain = 0.000
+13 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+archive_project {E:/EE2026_Lab/L2_Thurs_AM_Chen Zi Han_549_Archive.xpr.zip} -temp_dir E:/EE2026_Lab/Assignment2/.Xil/Vivado-14628-DESKTOP-0IR846V -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'E:/EE2026_Lab/Assignment2/.Xil/Vivado-14628-DESKTOP-0IR846V' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (E:/EE2026_Lab/L2_Thurs_AM_Chen Zi Han_549_Archive.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  9 00:09:38 2022...
